@@ -1,7 +1,7 @@
 public class main {
     public static void main(String[] args) {
-        Livro livro = new Livro("Dexter", "Jeff L.");
+        Book book = new Book("Dexter", "Jeff L.");
 
-        System.out.println(livro.toString());
+        System.out.println(book.toString());
     }
 }

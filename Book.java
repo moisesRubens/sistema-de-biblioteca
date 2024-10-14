@@ -1,9 +1,9 @@
-public class Livro {
+public class Book {
     private String name;
     private String author;
     private boolean available;
 
-    public Livro(String name, String author) {
+    public Book(String name, String author) {
         this.setName(name);
         this.setAuthor(author);
         this.setAvailable(true);
