@@ -5,8 +5,8 @@ public class Library {
     private ArrayList<Book> books;
 
     Library() {
-        setUsers(new ArrayList<User>());
-        setBooks(new ArrayList<Book>());
+        users = new ArrayList<User>();
+        books = new ArrayList<Book>();
     }
 
     public ArrayList<User> getUsers() {
