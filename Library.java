@@ -44,7 +44,7 @@ public class Library {
         System.out.println("Usuário cadastrado.");
     }
 
-    public User serachUSer(String name) {
+    public User searchUSer(String name) {
         for(User user: users) {
             if(user.getName().equals(name))
                     return user;

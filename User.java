@@ -24,23 +24,28 @@ public class User {
     }
 
     public void takeBook(Book book) {
-        if(book.isAvailable()) {
-            rentedBook = book;
-            book.setAvailable(false);
+        if(book != null) {
+            if (book.isAvailable()) {
+                rentedBook = book;
+                book.setAvailable(false);
+                System.out.println("Book rented");
+            }
+            else
+                System.out.println("Livro não disponível.");
+
         }
-        else {
-            System.out.println("Livro não disponível.");
-        }
+        else
+            System.out.println("Book does not exist at the library.");
     }
 
     void returnBook() {
         if(rentedBook != null) {
             rentedBook.setAvailable(true);
             rentedBook = null;
-            System.out.println("Devolução bem sucedida.");
+            System.out.println("Book returned.");
         }
         else {
-            System.out.println("Você não possui um livro alugado para devolver.");
+            System.out.println("You do not have a book to return.");
         }
     }
 }
